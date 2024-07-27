@@ -705,6 +705,10 @@ body {
     .text-banner-block-sm img {
         width: 100%;
     }
+
+    .wrap-px-40 {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 376px) {
@@ -764,7 +768,7 @@ body {
         padding: 0 10px;
     }
 
-    .banner_text{
+    .banner_text {
         gap: 15px;
     }
 }
