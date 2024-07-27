@@ -28,14 +28,8 @@
                     <a href='/paid_services/person.php' class='' title="Пациентам">Пациентам</a>
                 </li>
                 <li>
-                    <a href='/sp/list.php' class='' title="Специалисты">Специалисты</a>
-                </li>
-                <li>
                     <a href='/higt_technology/index.php' class='' title="Высокие технологии. Квоты">Высокие технологии.
                         Квоты</a>
-                </li>
-                <li>
-                    <a href='/scientific_effort/main.php' class='' title="Публикации">Публикации</a>
                 </li>
                 <li>
                     <a href='/about/contact.php' class='' title="Контакты">Контакты</a>
@@ -44,8 +38,14 @@
         </div>
     </div>
     <!--    Mobile menu-->
-    <div class="wrap-px-50">
+    <div class="wrap-px-40">
         <header class="header">
+
+            <button class="burger">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </button>
             <nav class="header_links-block">
                 <a href="#">О больнице</a>
                 <a href="#">Пациентам</a>
@@ -58,22 +58,51 @@
             </div>
             <div class="header_phone-block">
                 <p>+7 (499) 719-81-00</p>
+                <div class="header_address-block_xs">
+                    <p>Москва, Мичуринский пр-т, 6.</p>
+                    <a href="#" class="header_schema">Схема проезда</a>
+                </div>
             </div>
+
         </header>
+    </div>
+    <div class="text-banner-block wrap-px-40">
+        <p class="text-banner">Платные госпитализации в стационар</p>
+        <div class="text-banner-block-right">
+            <div class="msk-block">
+                <div class="msk-logo">
+                    <h3 class="msk-h">МСК</h3>
+                    <p class="msk-p">Официальный координатор<br/>по госпитализации</p>
+                </div>
+                <img class="line-height" src="img/line_vert.png" alt="pic">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-banner-block-sm">
+        <img src="/img/msk-480.png" alt="pic"/>
+        <img src="/img/obp-480.png" alt="pic"/>
+    </div>
+
+    <div class="text-banner-block-xs">
+        <img src="/img/msk-320.png" alt="pic"/>
+        <img src="/img/obp-320.png" alt="pic"/>
     </div>
     <section class="logo-block">
         <img class="line-height" src="img/line_vert.png" alt="pic">
 
         <img class="logo" src="img/logo.png" alt="pic">
-        <img class="line-height" src="img/line_vert.png" alt="pic" style="width: 40px;padding-left: 5px;">
+        <img class="line-height" src="img/line_vert.png" alt="pic"/>
 
         <img class="logo-banner" src="img/logo_ras.png" alt="pic">
-        <div class="msk-block">
-            <div class="msk-logo">
-                <p>МСК</p>
-                <p>Официальный координатор<br/>по госпитализации</p>
+        <div class="logo-block_right-block">
+            <div class="msk-block">
+                <div class="msk-logo">
+                    <h3 class="msk-h">МСК</h3>
+                    <p class="msk-p">Официальный координатор<br/>по госпитализации</p>
+                </div>
+                <img class="line-height" src="img/line_vert.png" alt="pic">
             </div>
-            <img class="line-height" src="img/line_vert.png" alt="pic">
         </div>
     </section>
     <section class="mt-50">
@@ -82,8 +111,8 @@
             <div class="banner">
                 <img src="img/banner-min.png" alt="pic"/>
                 <div class="banner_text">
-                    <h6>Платная госпитализация</h6>
-                    <p>круглосуточно</p>
+                    <h6 class="banner_text_h">Платная госпитализация</h6>
+                    <p class="banner_text_p">круглосуточно</p>
                 </div>
                 <div class="float-btn_pos">
                     <div class="float-btn">
@@ -94,7 +123,7 @@
             </div>
             <img src="/img/arrow_down.png" alt="pic" class="arrow" style="rotate: -90deg"/>
         </div>
-        <div class="banner-block_links content">
+        <div class="banner-block_links">
             <a href="#" class="active">Анкета пациента</a>
             <a href="#">Получить QR-код</a>
             <a href="#">Госпитализация</a>
@@ -105,7 +134,7 @@
     </section>
     <section class="services content mt-100">
         <h3 class="section-title">отделения стационара</h3>
-        <div class="grid-block">
+        <div class="grid-block-services">
             <div class="services-card">
                 <img src="/img/services/1.png" alt="pic"/>
                 <p>Хирургия</p>
@@ -148,7 +177,7 @@
     </section>
     <section class="services content mt-100 pb-50">
         <h3 class="section-title">направления</h3>
-        <div class="grid-block">
+        <div class="grid-block-directions">
             <div class="directions-card">
                 <div class="directions-card_image-block">
                     <img src="/img/directions/1.png" alt="pic"/>
@@ -158,17 +187,17 @@
                         <p class="fw-600">госпитализация</p>
                     </div>
                 </div>
-                    <p class="fs-12">
-                        Круглосуточный call-центр для поддержки
-                        пациента и решения любых вопросов.
-                        На связи менеджеры с медицинским
-                        образованием.<br/>
-                        Наша Служба гарантирует помощь
-                        в госпитализации в оптимальные,
-                        а при необходимости, в кратчайшие сроки
-                        именно в тот медицинский центр,
-                        который подходит вам наилучшим образом.
-                    </p>
+                <p class="fs-12">
+                    Круглосуточный call-центр для поддержки
+                    пациента и решения любых вопросов.
+                    На связи менеджеры с медицинским
+                    образованием.<br/>
+                    Наша Служба гарантирует помощь
+                    в госпитализации в оптимальные,
+                    а при необходимости, в кратчайшие сроки
+                    именно в тот медицинский центр,
+                    который подходит вам наилучшим образом.
+                </p>
             </div>
             <div class="directions-card">
                 <div class="directions-card_image-block">
