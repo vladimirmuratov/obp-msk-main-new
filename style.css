@@ -639,6 +639,10 @@ body {
     .text-banner-block {
         justify-content: center;
     }
+
+    .content{
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 481px) {
